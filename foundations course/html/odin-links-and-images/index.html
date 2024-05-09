@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Links and Images</title>
+    </head>
+    <body>
+        <h1>Homepage</h1>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+        <!-- <a> is anchor element ==> it is defined by
+            wrapping text/another HTML element we want to be 
+            a link with <a> tag -->
+        <!-- HTML attribute gives additional information
+        to an HTML element and always goes in the element's
+        opening tag. Attribute is made up of name and value -->
+        <!-- href(hypertext reference) attribute, value of this
+        attribute is the destination we want our link to go to. 
+        Without this attribute the text wrapped within anchor tag
+        will look like plain text, if it is present the browser
+        will give the text blue colour and underline it to signify
+        it is a link.-->
+        <!-- target attribute specifies where the linked resource
+        will be opened, by default it is '_self' which opens the link
+        in the current tab. '_blank' opens the link in a new tab or window -->
+        <!-- rel attribute describes the relation between the current
+        page and the linked document. -->
+        <!-- 'noopener' value prevents the
+        opened link from gaining access to the webpage from which
+        it was opened. This prevents phishing attacks - the opened
+        link can change the original webpage to a different one to
+        trick users (this is called tabnabbing) -->
+        <!-- 'noreferrer' prevents the opened link from knowing
+        which webpage or resource has a link(or 'reference') to it.
+        It includes the noopener behaviour and can be used by itself as well. -->
+        <!-- target = '_blank' provides rel="noopener noreferrer" security
+        by default, but it is a good coding practice to pair
+        target="_blank" with rel="noopener noreferrer" -->
+        <!-- Absolute links - links to pages on other websites on the
+        internet. A typical absolute link is made up of
+        protocol://domain/path
+        Absolute link will always contain protocol and domain -->
+        <a href="./pages/about.html">About</a>
+        <!-- This is a relative link, which are links to other
+        pages on our own website, it does not inclyde the domain
+        name since it is another page on the same site, it assumes
+        the domain name will be the same, they only include the 
+        file path to the other page relative to the page you are
+        creating the link on. Relative to index.html, about.html is in
+        pages directory. -->
+        <!-- Prepending './' before the link will prevent any
+        unexpected issues. By adding './' we are specifying to
+        your code that it should start looking for the
+        file/directory relative to the current directory. -->
+        <!-- Think of your domain name (town.com) as a town, 
+        the directory in which your website is located (/museum) 
+        as a museum, and each page on your website as a room in 
+        the museum (/museum/movie_room.html and 
+        /museum/shops/coffee_shop.html). Relative links like 
+        ./shops/coffee_shop.html are directions from the current 
+        room (the museum movie room /museum/movie_room.html) to 
+        another room (the museum shop). Absolute links, on the 
+        other hand, are full directions including the protocol (https), 
+        domain name (town.com) and the path from that 
+        domain name (/museum/shops/coffee_shop.html): 
+        https://town.com/museum/shops/coffee_shop.html. -->
+        <img src="./images/dog.jpg" alt="Charles, the dog" height="853" width="640">
+        <!-- img element is self-closing, it does not need a 
+        closing tag. src attribute tells the browser where the
+        image file is located, it can embed an image using
+        both absolute and relative paths. -->
+        <!-- check about.html for Parent directories info -->
+        <!-- alt (alternative text) attribute is used to 
+        describe an image, it will be used in place of the image 
+        if it cannot be loaded. It is also used with screen 
+        readers to describe what the image is to visually impaired users. -->
+        <!-- images always need to have src and alt attributes. -->
+        <!-- height and width attributes not strictly required
+        but helps the browser layout the page without causing the
+        page to jump and flash. Good habit to specify these
+        attributes on every image, even if image is the correct
+        size or you are using CSS to modify it. -->
+        <!-- you can write like this too:
+        <img src="./images/dog.jpg" alt="Charles, the dog" height="853" width="640" /> 
+        This was used in older versions of html, not needed in html5.-->
+        <a href="./images.html">Images</a>
+    </body>
+</html>

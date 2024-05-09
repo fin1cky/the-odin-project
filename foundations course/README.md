@@ -1,0 +1,1 @@
+Notes from The Odin Project "Foundations Course"
